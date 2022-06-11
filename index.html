@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="display">
+            <div id="equation"></div>
+            <div id="number">0</div>
+        </div>
+        <div id="pads">
+            <div id="clear" class="op-pad" onclick="clearDisplay()">AC</div>
+            <div id="divide" class="op-pad" onclick="divide()">/</div>
+            <div id="multiply" class="op-pad" onclick="multiply()">x</div>
+            <div id="seven" class="num-pad" onclick="seven()">7</div>
+            <div id="eight" class="num-pad" onclick="eight()">8</div>
+            <div id="nine" class="num-pad" onclick="nine()">9</div>
+            <div id="subtract" class="op-pad" onclick="subtract()">-</div>
+            <div id="four" class="num-pad" onclick="four()">4</div>
+            <div id="five" class="num-pad" onclick="five()">5</div>
+            <div id="six" class="num-pad" onclick="six()">6</div>
+            <div id="add" class="op-pad" onclick="add()">+</div>
+            <div id="one" class="num-pad" onclick="one()">1</div>
+            <div id="two" class="num-pad" onclick="two()">2</div>
+            <div id="three" class="num-pad" onclick="three()">3</div>
+            <div id="equals" class="op-pad" onclick="equals()">=</div>
+            <div id="zero" class="num-pad" onclick="zero()">0</div>
+            <div id="deicmal" class="num-pad" onclick="decimals()">.</div>
+        </div>
+    </div>
+    <!-- External Javascript -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
